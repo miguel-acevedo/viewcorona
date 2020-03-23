@@ -12,9 +12,8 @@ type Props = {
 }
 
 const WithStaticProps = ({ items }: Props) => (
-  <Layout title="Home | Next.js + TypeScript Example">
+  <Layout title="Corona Virus Timeline">
     <Header title="Corona Virus"/>
-    <h1>Hello Next.js 👋</h1>
     <Timeline items={items}/>
     <p>
       <Link href="/about">

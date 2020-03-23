@@ -18,7 +18,8 @@ export const timelineData: Event[] = [
     text: "On Dec. 31, the government in Wuhan, China, confirmed that health authorities were treating dozens of cases. Days later, researchers in China identified a new virus that had infected dozens of people in Asia. At the time, there was no evidence that the virus was readily spread by humans. Health officials in China said they were monitoring it to prevent the outbreak from developing into something more severe.",
     twitter: [
         "https://twitter.com/WSJ/status/1235692304624685056",
-        "https://twitter.com/realDonaldTrump/status/1241779803344248835"
+        "https://twitter.com/realDonaldTrump/status/1241779803344248835",
+        "https://twitter.com/Interior/status/463440424141459456"
     ]
 },
 { 

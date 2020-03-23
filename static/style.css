@@ -43,8 +43,9 @@ section {
   }
 
   .scroll-box {
-    height: 393px;
+    height: 420px;
     overflow-y: auto;
+    margin-top: 30px;
   }
 
 
@@ -201,8 +202,33 @@ section {
     top: 0;
     right: 0;
   }
+
+
+  .tweet-date {
+    background: #31708f;
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 7px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .twitter-modal {
+    display: none !important;
+  }
   
   @media screen and (max-width: 768px) {
+
+    .twitter-modal {
+      display: inline-block !important;
+    }
+
+    .twitter-card {
+      display: none;
+    }
+
     .timeline::before {
       left: 50px;
     }
@@ -529,4 +555,81 @@ color: #007bff!important;
 
 .case_count {
   font-weight: 600;
+}
+
+.event-title {
+  padding-top: 20px;
+}
+
+.timeline-content {
+  transform: none !important;
+}
+
+.popup-content {
+  width: 100% !important;
+  border: none !important;
+  background: rgba(255, 255, 255, 0) !important;
+}
+
+
+
+
+
+.modal {
+  font-size: 12px;
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+
+.body.popup-overlay {
+  overflow-y: hidden;
+}
+
+.popup-overlay {
+  overflow-y: auto;
+}
+
+.modal-body {
+  height: 630px;
+  overflow-y: auto;
+}
+
+.modal-header .close {
+  margin-top: -20px !important;
+}
+
+.exit-modal {
+  font-size: 35px;
+}
+
+.modal-title {
+  font-size: 20px;
 }

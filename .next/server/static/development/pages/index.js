@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -396,9 +396,12 @@ const Timeline = ({
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Twitter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Twitter */ "./components/Twitter.tsx");
+/* harmony import */ var reactjs_popup__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactjs-popup */ "reactjs-popup");
+/* harmony import */ var reactjs_popup__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactjs_popup__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_Twitter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Twitter */ "./components/Twitter.tsx");
 var _jsxFileName = "/Users/apple/Documents/coronaproject/viewcorona/components/TimelineItem.tsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0__["createElement"];
+
 
 
 
@@ -410,7 +413,7 @@ const TimelineItem = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 12,
+    lineNumber: 15,
     columnNumber: 5
   }
 }, __jsx("div", {
@@ -418,7 +421,7 @@ const TimelineItem = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 13,
+    lineNumber: 16,
     columnNumber: 7
   }
 }), __jsx("div", {
@@ -426,7 +429,7 @@ const TimelineItem = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 15,
+    lineNumber: 18,
     columnNumber: 7
   }
 }, __jsx("div", {
@@ -434,29 +437,15 @@ const TimelineItem = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 16,
-    columnNumber: 9
-  }
-}, __jsx("div", {
-  className: "timeline-img-header",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 17,
+    lineNumber: 19,
     columnNumber: 9
   }
 }, __jsx("h2", {
+  className: "event-title",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 18,
-    columnNumber: 11
-  }
-}, "Card Title")), __jsx("h2", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 20,
+    lineNumber: 25,
     columnNumber: 11
   }
 }, data.title), __jsx("div", {
@@ -464,21 +453,21 @@ const TimelineItem = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 21,
+    lineNumber: 26,
     columnNumber: 11
   }
 }, data.date), __jsx("p", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 22,
+    lineNumber: 27,
     columnNumber: 11
   }
 }, data.text), __jsx("h3", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 23,
+    lineNumber: 28,
     columnNumber: 11
   }
 }, "Total Cases: ", __jsx("span", {
@@ -486,262 +475,131 @@ const TimelineItem = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 23,
+    lineNumber: 28,
     columnNumber: 28
   }
-}, data.cases_count)), __jsx("a", {
-  className: "bnt-more",
-  href: "javascript:void(0)",
+}, data.cases_count)), __jsx(reactjs_popup__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  trigger: __jsx("a", {
+    className: "bnt-more twitter-modal",
+    href: "javascript:void(0)",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 19
+    }
+  }, "View Tweets"),
+  modal: true,
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 24,
-    columnNumber: 11
+    lineNumber: 31,
+    columnNumber: 3
   }
-}, "View Tweets")), __jsx("div", {
-  className: "timeline-content js--fadeInRight col-xs-6",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 26,
-    columnNumber: 9
-  }
-}, __jsx("div", {
-  className: "date",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 27,
-    columnNumber: 11
-  }
-}, "1 MAY 2016"), __jsx("ul", {
-  className: "nav nav-pills mb-3",
-  id: "pills-tab",
-  role: "tablist",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 28,
-    columnNumber: 11
-  }
-}, __jsx("li", {
-  className: "nav-item",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 29,
-    columnNumber: 13
-  }
-}, __jsx("a", {
-  className: "nav-link",
-  id: "pills-home-tab",
-  "data-toggle": "pill",
-  href: "#pillz",
-  role: "tab",
-  "aria-controls": "pillz",
-  "aria-selected": "true",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 30,
-    columnNumber: 15
-  }
-}, "News")), __jsx("li", {
-  className: "nav-item",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 32,
-    columnNumber: 13
-  }
-}, __jsx("a", {
-  className: "nav-link active",
-  id: "pills-profile-tab",
-  "data-toggle": "pill",
-  href: "#pillz-profile",
-  role: "tab",
-  "aria-controls": "pillz-profile",
-  "aria-selected": "false",
+}, close => __jsx("div", {
+  className: "modal-dialog",
+  role: "document",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 33,
-    columnNumber: 15
+    columnNumber: 5
   }
-}, "Tweets"))), __jsx("div", {
+}, __jsx("div", {
+  className: "modal-content",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 34,
+    columnNumber: 5
+  }
+}, __jsx("div", {
+  className: "modal-header",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 35,
+    columnNumber: 7
+  }
+}, __jsx("h5", {
+  className: "modal-title",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 36,
+    columnNumber: 9
+  }
+}, "Tweets from Dec 31 - Jan 8"), __jsx("button", {
+  type: "button",
+  onClick: close,
+  className: "close",
+  "data-dismiss": "modal",
+  "aria-label": "Close",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 37,
+    columnNumber: 9
+  }
+}, __jsx("span", {
+  className: "exit-modal",
+  "aria-hidden": "true",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 38,
+    columnNumber: 11
+  }
+}, "\xD7"))), __jsx("div", {
+  className: "modal-body",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 41,
+    columnNumber: 7
+  }
+}, __jsx(_components_Twitter__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  data: data.twitter,
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 42,
+    columnNumber: 9
+  }
+})))))), __jsx("div", {
+  className: "twitter-card timeline-content js--fadeInRight col-xs-6",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 59,
+    columnNumber: 9
+  }
+}, __jsx("div", {
+  className: "tweet-date",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 60,
+    columnNumber: 11
+  }
+}, "Tweets from Dec 31 - Jan 9"), __jsx("div", {
   className: "tab-content scroll-box",
   id: "pills-tabContent",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 36,
+    lineNumber: 61,
     columnNumber: 11
   }
-}, __jsx("div", {
-  className: "tab-pane fade",
-  id: "pillz",
-  role: "tabpanel",
-  "aria-labelledby": "pills-home-tab",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 37,
-    columnNumber: 13
-  }
-}, __jsx("div", {
-  className: "card flex-md-row mb-4 box-shadow h-md-250",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 39,
-    columnNumber: 13
-  }
-}, __jsx("div", {
-  className: "card-body d-flex flex-column align-items-start",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 40,
-    columnNumber: 17
-  }
-}, __jsx("strong", {
-  className: "publisher d-inline-block mb-2 text-primary",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 41,
-    columnNumber: 19
-  }
-}, "World"), __jsx("div", {
-  className: "article-date mb-1 text-muted",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 45,
-    columnNumber: 19
-  }
-}, "Nov 12"), __jsx("p", {
-  className: "card-text mb-auto",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 46,
-    columnNumber: 19
-  }
-}, "This is a wider card with supporting text below as a natural lead-in to additional content.")), __jsx("img", {
-  className: "card-img-right flex-auto d-none d-md-block",
-  "data-src": "holder.js/200x250?theme=thumb",
-  alt: "Thumbnail [200x250]",
-  src: "data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_171048c3e81%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_171048c3e81%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1953125%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E",
-  "data-holder-rendered": "true",
-  style: {
-    width: "200px",
-    height: "250px"
-  },
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 48,
-    columnNumber: 17
-  }
-})), __jsx("div", {
-  className: "card",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 51,
-    columnNumber: 15
-  }
-}, __jsx("div", {
-  className: "card-body",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 53,
-    columnNumber: 19
-  }
-}, __jsx("h5", {
-  className: "card-title",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 54,
-    columnNumber: 21
-  }
-}, "Special title treatment ", __jsx("span", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 54,
-    columnNumber: 72
-  }
-}, "@someuser")), __jsx("p", {
-  className: "card-text",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 55,
-    columnNumber: 21
-  }
-}, "With supporting text below as a natural lead-in to additional content."))), __jsx("div", {
-  className: "card",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 59,
-    columnNumber: 15
-  }
-}, __jsx("div", {
-  className: "card-body",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 61,
-    columnNumber: 19
-  }
-}, __jsx("h5", {
-  className: "card-title",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 62,
-    columnNumber: 21
-  }
-}, "Special title treatment ", __jsx("span", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 62,
-    columnNumber: 72
-  }
-}, "@someuser")), __jsx("p", {
-  className: "card-text",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 63,
-    columnNumber: 21
-  }
-}, "With supporting text below as a natural lead-in to additional content.")))), __jsx("div", {
-  className: "tab-pane fade show active",
-  id: "pillz-profile",
-  role: "tabpanel",
-  "aria-labelledby": "pills-profile-tab",
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 70,
-    columnNumber: 13
-  }
-}, __jsx(_components_Twitter__WEBPACK_IMPORTED_MODULE_1__["default"], {
+}, __jsx(_components_Twitter__WEBPACK_IMPORTED_MODULE_2__["default"], {
   data: data.twitter,
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 71,
-    columnNumber: 15
+    lineNumber: 62,
+    columnNumber: 13
   }
-}))))));
+})))));
 
 /* harmony default export */ __webpack_exports__["default"] = (TimelineItem);
 
@@ -2499,7 +2357,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 const WithStaticProps = ({
   items
 }) => __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
-  title: "Home | Next.js + TypeScript Example",
+  title: "Corona Virus Timeline",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
@@ -2514,26 +2372,19 @@ const WithStaticProps = ({
     lineNumber: 16,
     columnNumber: 5
   }
-}), __jsx("h1", {
+}), __jsx(_components_Timeline__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  items: items,
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 17,
     columnNumber: 5
   }
-}, "Hello Next.js \uD83D\uDC4B"), __jsx(_components_Timeline__WEBPACK_IMPORTED_MODULE_4__["default"], {
-  items: items,
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 18,
-    columnNumber: 5
-  }
 }), __jsx("p", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 19,
+    lineNumber: 18,
     columnNumber: 5
   }
 }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -2541,14 +2392,14 @@ const WithStaticProps = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 20,
+    lineNumber: 19,
     columnNumber: 7
   }
 }, __jsx("a", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 21,
+    lineNumber: 20,
     columnNumber: 9
   }
 }, "About"))));
@@ -2592,7 +2443,7 @@ const timelineData = [{
   date: 'Dec 31',
   cases_count: 2,
   text: "On Dec. 31, the government in Wuhan, China, confirmed that health authorities were treating dozens of cases. Days later, researchers in China identified a new virus that had infected dozens of people in Asia. At the time, there was no evidence that the virus was readily spread by humans. Health officials in China said they were monitoring it to prevent the outbreak from developing into something more severe.",
-  twitter: ["https://twitter.com/WSJ/status/1235692304624685056", "https://twitter.com/realDonaldTrump/status/1241779803344248835"]
+  twitter: ["https://twitter.com/WSJ/status/1235692304624685056", "https://twitter.com/realDonaldTrump/status/1241779803344248835", "https://twitter.com/Interior/status/463440424141459456"]
 }, {
   id: 1,
   title: 'China reported its first death.',
@@ -2612,7 +2463,7 @@ const timelineData = [{
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!*******************************!*\
   !*** multi ./pages/index.tsx ***!
   \*******************************/
@@ -2676,6 +2527,17 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-is");
+
+/***/ }),
+
+/***/ "reactjs-popup":
+/*!********************************!*\
+  !*** external "reactjs-popup" ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("reactjs-popup");
 
 /***/ }),
 

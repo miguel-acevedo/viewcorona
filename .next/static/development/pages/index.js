@@ -315,11 +315,13 @@ var Timeline = function Timeline(_ref) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Twitter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Twitter */ "./components/Twitter.tsx");
+/* harmony import */ var reactjs_popup__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactjs-popup */ "./node_modules/reactjs-popup/reactjs-popup.es.js");
+/* harmony import */ var _components_Twitter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Twitter */ "./components/Twitter.tsx");
 var _this = undefined,
     _jsxFileName = "/Users/apple/Documents/coronaproject/viewcorona/components/TimelineItem.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0__["createElement"];
+
 
 
 
@@ -331,7 +333,7 @@ var TimelineItem = function TimelineItem(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 15,
       columnNumber: 5
     }
   }, __jsx("div", {
@@ -339,7 +341,7 @@ var TimelineItem = function TimelineItem(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 16,
       columnNumber: 7
     }
   }), __jsx("div", {
@@ -347,7 +349,7 @@ var TimelineItem = function TimelineItem(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 18,
       columnNumber: 7
     }
   }, __jsx("div", {
@@ -355,29 +357,15 @@ var TimelineItem = function TimelineItem(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 9
-    }
-  }, __jsx("div", {
-    className: "timeline-img-header",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 19,
       columnNumber: 9
     }
   }, __jsx("h2", {
+    className: "event-title",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 11
-    }
-  }, "Card Title")), __jsx("h2", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 25,
       columnNumber: 11
     }
   }, data.title), __jsx("div", {
@@ -385,21 +373,21 @@ var TimelineItem = function TimelineItem(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 26,
       columnNumber: 11
     }
   }, data.date), __jsx("p", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 27,
       columnNumber: 11
     }
   }, data.text), __jsx("h3", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 28,
       columnNumber: 11
     }
   }, "Total Cases: ", __jsx("span", {
@@ -407,262 +395,133 @@ var TimelineItem = function TimelineItem(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 28,
       columnNumber: 28
     }
-  }, data.cases_count)), __jsx("a", {
-    className: "bnt-more",
-    href: "javascript:void(0)",
+  }, data.cases_count)), __jsx(reactjs_popup__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    trigger: __jsx("a", {
+      className: "bnt-more twitter-modal",
+      href: "javascript:void(0)",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31,
+        columnNumber: 19
+      }
+    }, "View Tweets"),
+    modal: true,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
-      columnNumber: 11
+      lineNumber: 31,
+      columnNumber: 3
     }
-  }, "View Tweets")), __jsx("div", {
-    className: "timeline-content js--fadeInRight col-xs-6",
+  }, function (close) {
+    return __jsx("div", {
+      className: "modal-dialog",
+      role: "document",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33,
+        columnNumber: 5
+      }
+    }, __jsx("div", {
+      className: "modal-content",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34,
+        columnNumber: 5
+      }
+    }, __jsx("div", {
+      className: "modal-header",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35,
+        columnNumber: 7
+      }
+    }, __jsx("h5", {
+      className: "modal-title",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 36,
+        columnNumber: 9
+      }
+    }, "Tweets from Dec 31 - Jan 8"), __jsx("button", {
+      type: "button",
+      onClick: close,
+      className: "close",
+      "data-dismiss": "modal",
+      "aria-label": "Close",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 37,
+        columnNumber: 9
+      }
+    }, __jsx("span", {
+      className: "exit-modal",
+      "aria-hidden": "true",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38,
+        columnNumber: 11
+      }
+    }, "\xD7"))), __jsx("div", {
+      className: "modal-body",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41,
+        columnNumber: 7
+      }
+    }, __jsx(_components_Twitter__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      data: data.twitter,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42,
+        columnNumber: 9
+      }
+    }))));
+  })), __jsx("div", {
+    className: "twitter-card timeline-content js--fadeInRight col-xs-6",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 59,
       columnNumber: 9
     }
   }, __jsx("div", {
-    className: "date",
+    className: "tweet-date",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 60,
       columnNumber: 11
     }
-  }, "1 MAY 2016"), __jsx("ul", {
-    className: "nav nav-pills mb-3",
-    id: "pills-tab",
-    role: "tablist",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 11
-    }
-  }, __jsx("li", {
-    className: "nav-item",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 13
-    }
-  }, __jsx("a", {
-    className: "nav-link",
-    id: "pills-home-tab",
-    "data-toggle": "pill",
-    href: "#pillz",
-    role: "tab",
-    "aria-controls": "pillz",
-    "aria-selected": "true",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 15
-    }
-  }, "News")), __jsx("li", {
-    className: "nav-item",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 13
-    }
-  }, __jsx("a", {
-    className: "nav-link active",
-    id: "pills-profile-tab",
-    "data-toggle": "pill",
-    href: "#pillz-profile",
-    role: "tab",
-    "aria-controls": "pillz-profile",
-    "aria-selected": "false",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 15
-    }
-  }, "Tweets"))), __jsx("div", {
+  }, "Tweets from Dec 31 - Jan 9"), __jsx("div", {
     className: "tab-content scroll-box",
     id: "pills-tabContent",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 61,
       columnNumber: 11
     }
-  }, __jsx("div", {
-    className: "tab-pane fade",
-    id: "pillz",
-    role: "tabpanel",
-    "aria-labelledby": "pills-home-tab",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 13
-    }
-  }, __jsx("div", {
-    className: "card flex-md-row mb-4 box-shadow h-md-250",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39,
-      columnNumber: 13
-    }
-  }, __jsx("div", {
-    className: "card-body d-flex flex-column align-items-start",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 17
-    }
-  }, __jsx("strong", {
-    className: "publisher d-inline-block mb-2 text-primary",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 19
-    }
-  }, "World"), __jsx("div", {
-    className: "article-date mb-1 text-muted",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45,
-      columnNumber: 19
-    }
-  }, "Nov 12"), __jsx("p", {
-    className: "card-text mb-auto",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46,
-      columnNumber: 19
-    }
-  }, "This is a wider card with supporting text below as a natural lead-in to additional content.")), __jsx("img", {
-    className: "card-img-right flex-auto d-none d-md-block",
-    "data-src": "holder.js/200x250?theme=thumb",
-    alt: "Thumbnail [200x250]",
-    src: "data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_171048c3e81%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_171048c3e81%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1953125%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E",
-    "data-holder-rendered": "true",
-    style: {
-      width: "200px",
-      height: "250px"
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48,
-      columnNumber: 17
-    }
-  })), __jsx("div", {
-    className: "card",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51,
-      columnNumber: 15
-    }
-  }, __jsx("div", {
-    className: "card-body",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53,
-      columnNumber: 19
-    }
-  }, __jsx("h5", {
-    className: "card-title",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 54,
-      columnNumber: 21
-    }
-  }, "Special title treatment ", __jsx("span", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 54,
-      columnNumber: 72
-    }
-  }, "@someuser")), __jsx("p", {
-    className: "card-text",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 55,
-      columnNumber: 21
-    }
-  }, "With supporting text below as a natural lead-in to additional content."))), __jsx("div", {
-    className: "card",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 59,
-      columnNumber: 15
-    }
-  }, __jsx("div", {
-    className: "card-body",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61,
-      columnNumber: 19
-    }
-  }, __jsx("h5", {
-    className: "card-title",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62,
-      columnNumber: 21
-    }
-  }, "Special title treatment ", __jsx("span", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62,
-      columnNumber: 72
-    }
-  }, "@someuser")), __jsx("p", {
-    className: "card-text",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 63,
-      columnNumber: 21
-    }
-  }, "With supporting text below as a natural lead-in to additional content.")))), __jsx("div", {
-    className: "tab-pane fade show active",
-    id: "pillz-profile",
-    role: "tabpanel",
-    "aria-labelledby": "pills-profile-tab",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70,
-      columnNumber: 13
-    }
-  }, __jsx(_components_Twitter__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, __jsx(_components_Twitter__WEBPACK_IMPORTED_MODULE_2__["default"], {
     data: data.twitter,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71,
-      columnNumber: 15
+      lineNumber: 62,
+      columnNumber: 13
     }
-  }))))));
+  })))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (TimelineItem);
@@ -4725,6 +4584,751 @@ module.exports = (__webpack_require__(/*! dll-reference dll_2adc2403d89adc16ead0
 
 /***/ }),
 
+/***/ "./node_modules/reactjs-popup/reactjs-popup.es.js":
+/*!********************************************************!*\
+  !*** ./node_modules/reactjs-popup/reactjs-popup.es.js ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/*!
+ * reactjs-popup v1.5.0
+ * (c) 2019-present Youssouf EL AZIZI <youssoufelazizi@gmail.com>
+ * Released under the MIT License.
+ */
+
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (typeof call === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _toConsumableArray(arr) {
+  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread();
+}
+
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) {
+    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) arr2[i] = arr[i];
+
+    return arr2;
+  }
+}
+
+function _iterableToArray(iter) {
+  if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);
+}
+
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance");
+}
+
+/* Algo to calculate position
+  1. center position for popup content : the center of the trigger will be the center of the content content
+      so the popup content position will be like this :
+      top => the y of the center for the trigger element : trigger.top + trigger.height/2
+      left => the x of the center for the trigger element : trigger.left + trigger.width/2
+
+  2. translate position according to the first  position attribute  passed  in the function argument
+      for example :
+        position = 'left top'
+        we need to handle the first argument in the position: 'left' => that's mean we need to translate the popup content according to the X axis by - content.width/2
+
+  3.translate position according to the first  position attribute  passed  in the function argument
+    for example :
+      position = 'left top'
+      the second argument 'top' => translate popup content by + content.height*4/5
+
+  4. check if calculated position is going out of bounds of wrapper box or not. If yes repeat 1-3 for next position enum. By default wrapper box is window element
+*/
+function getCoordinatesForPosition(triggerBounding, ContentBounding, position, arrow, _ref) {
+  var offsetX = _ref.offsetX,
+      offsetY = _ref.offsetY;
+  var margin = arrow ? 8 : 0;
+  var args = position.split(' '); // the step N 1 : center the popup content => ok
+
+  var CenterTop = triggerBounding.top + triggerBounding.height / 2;
+  var CenterLeft = triggerBounding.left + triggerBounding.width / 2;
+  var height = ContentBounding.height,
+      width = ContentBounding.width;
+  var top = CenterTop - height / 2;
+  var left = CenterLeft - width / 2;
+  var transform = '';
+  var arrowTop = '0%';
+  var arrowLeft = '0%'; // the  step N 2 : => ok
+
+  switch (args[0]) {
+    case 'top':
+      top -= height / 2 + triggerBounding.height / 2 + margin;
+      transform = "rotate(45deg)";
+      arrowTop = '100%';
+      arrowLeft = '50%';
+      break;
+
+    case 'bottom':
+      top += height / 2 + triggerBounding.height / 2 + margin;
+      transform = "rotate(225deg)";
+      arrowLeft = '50%';
+      break;
+
+    case 'left':
+      left -= width / 2 + triggerBounding.width / 2 + margin;
+      transform = " rotate(-45deg)";
+      arrowLeft = '100%';
+      arrowTop = '50%';
+      break;
+
+    case 'right':
+      left += width / 2 + triggerBounding.width / 2 + margin;
+      transform = "rotate(135deg)";
+      arrowTop = '50%';
+      break;
+
+    default:
+  }
+
+  switch (args[1]) {
+    case 'top':
+      top = triggerBounding.top;
+      arrowTop = "".concat(triggerBounding.height / 2, "px");
+      break;
+
+    case 'bottom':
+      top = triggerBounding.top - height + triggerBounding.height;
+      arrowTop = "".concat(height - triggerBounding.height / 2, "px");
+      break;
+
+    case 'left':
+      left = triggerBounding.left;
+      arrowLeft = "".concat(triggerBounding.width / 2, "px");
+      break;
+
+    case 'right':
+      left = triggerBounding.left - width + triggerBounding.width;
+      arrowLeft = "".concat(width - triggerBounding.width / 2, "px");
+      break;
+
+    default:
+  }
+
+  top = args[0] === 'top' ? top - offsetY : top + offsetY;
+  left = args[0] === 'left' ? left - offsetX : left + offsetX;
+  return {
+    top: top,
+    left: left,
+    transform: transform,
+    arrowLeft: arrowLeft,
+    arrowTop: arrowTop
+  };
+}
+
+function calculatePosition(triggerBounding, ContentBounding, positions, arrow, _ref2, wrapperBox) {
+  var offsetX = _ref2.offsetX,
+      offsetY = _ref2.offsetY;
+  var bestCoords;
+  var i = 0;
+
+  while (i < positions.length) {
+    bestCoords = getCoordinatesForPosition(triggerBounding, ContentBounding, positions[i], arrow, {
+      offsetX: offsetX,
+      offsetY: offsetY
+    });
+    var contentBox = {
+      top: bestCoords.top,
+      left: bestCoords.left,
+      width: ContentBounding.width,
+      height: ContentBounding.height
+    };
+
+    if (contentBox.top <= wrapperBox.top || contentBox.left <= wrapperBox.left || contentBox.top + contentBox.height >= wrapperBox.top + wrapperBox.height || contentBox.left + contentBox.width >= wrapperBox.left + wrapperBox.width) {
+      i++;
+    } else {
+      break;
+    }
+  }
+
+  return bestCoords;
+}
+
+var styles = {
+  popupContent: {
+    tooltip: {
+      position: 'absolute',
+      zIndex: '2',
+      width: '200px',
+      background: "rgb(255, 255, 255)",
+      border: "1px solid rgb(187, 187, 187)",
+      boxShadow: "rgba(0, 0, 0, 0.2) 0px 1px 3px",
+      padding: '5px'
+    },
+    modal: {
+      position: 'relative',
+      background: "rgb(255, 255, 255)",
+      width: '50%',
+      margin: 'auto',
+      border: "1px solid rgb(187, 187, 187)",
+      padding: '5px'
+    }
+  },
+  popupArrow: {
+    height: '10px',
+    width: '10px',
+    position: 'absolute',
+    background: 'rgb(255, 255, 255)',
+    transform: 'rotate(45deg)',
+    margin: '-5px',
+    zIndex: '-1',
+    boxShadow: 'rgba(0, 0, 0, 0.2) 1px 1px 1px'
+  },
+  overlay: {
+    tooltip: {
+      position: 'fixed',
+      top: '0',
+      bottom: '0',
+      left: '0',
+      right: '0'
+    },
+    modal: {
+      position: 'fixed',
+      top: '0',
+      bottom: '0',
+      left: '0',
+      right: '0',
+      background: "rgba(0, 0, 0,0.5)",
+      display: 'flex',
+      zIndex: '999'
+    }
+  }
+};
+
+var POSITION_TYPES = ['top left', 'top center', 'top right', 'right top', 'right center', 'right bottom', 'bottom left', 'bottom center', 'bottom right', 'left top', 'left center', 'left bottom', 'center center'];
+
+var Popup =
+/*#__PURE__*/
+function (_React$PureComponent) {
+  _inherits(Popup, _React$PureComponent);
+
+  function Popup(props) {
+    var _this;
+
+    _classCallCheck(this, Popup);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Popup).call(this, props));
+
+    _defineProperty(_assertThisInitialized(_this), "repositionOnResize", function () {
+      _this.setPosition();
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onEscape", function (e) {
+      if (e.key === 'Escape') _this.closePopup();
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "lockScroll", function () {
+      var lockScroll = _this.props.lockScroll;
+      var modal = _this.state.modal;
+      if (modal && lockScroll)
+        /* eslint-disable-next-line no-undef */
+        document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "resetScroll", function () {
+      var lockScroll = _this.props.lockScroll;
+      var modal = _this.state.modal;
+      if (modal && lockScroll)
+        /* eslint-disable-next-line no-undef */
+        document.getElementsByTagName('body')[0].style.overflow = 'auto';
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "togglePopup", function (e) {
+      // https://reactjs.org/docs/events.html#event-pooling
+      e.persist();
+      if (_this.state.isOpen) _this.closePopup(e);else _this.openPopup(e);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "openPopup", function (e) {
+      var _this$props = _this.props,
+          disabled = _this$props.disabled,
+          onOpen = _this$props.onOpen;
+      var isOpen = _this.state.isOpen;
+      if (isOpen || disabled) return;
+      onOpen(e);
+
+      _this.setState({
+        isOpen: true
+      }, function () {
+        _this.setPosition();
+
+        _this.lockScroll();
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "closePopup", function (e) {
+      var onClose = _this.props.onClose;
+      var isOpen = _this.state.isOpen;
+      if (!isOpen) return;
+      onClose(e);
+
+      _this.setState({
+        isOpen: false
+      }, function () {
+        _this.resetScroll();
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onMouseEnter", function () {
+      clearTimeout(_this.timeOut);
+      var mouseEnterDelay = _this.props.mouseEnterDelay;
+      _this.timeOut = setTimeout(function () {
+        return _this.openPopup();
+      }, mouseEnterDelay);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onMouseLeave", function () {
+      clearTimeout(_this.timeOut);
+      var mouseLeaveDelay = _this.props.mouseLeaveDelay;
+      _this.timeOut = setTimeout(function () {
+        return _this.closePopup();
+      }, mouseLeaveDelay);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "getTooltipBoundary", function () {
+      var keepTooltipInside = _this.props.keepTooltipInside;
+      var boundingBox = {
+        top: 0,
+        left: 0,
+
+        /* eslint-disable-next-line no-undef */
+        width: window.innerWidth,
+
+        /* eslint-disable-next-line no-undef */
+        height: window.innerHeight
+      };
+
+      if (typeof keepTooltipInside === 'string') {
+        /* eslint-disable-next-line no-undef */
+        var selector = document.querySelector(keepTooltipInside);
+
+        if (true) {
+          if (selector === null) throw new Error("".concat(keepTooltipInside, " selector is not exist : keepTooltipInside must be a valid html selector 'class' or 'Id'  or a boolean value"));
+        }
+
+        boundingBox = selector.getBoundingClientRect();
+      }
+
+      return boundingBox;
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "setPosition", function () {
+      var _this$state = _this.state,
+          modal = _this$state.modal,
+          isOpen = _this$state.isOpen;
+      if (modal || !isOpen) return;
+      var _this$props2 = _this.props,
+          arrow = _this$props2.arrow,
+          position = _this$props2.position,
+          offsetX = _this$props2.offsetX,
+          offsetY = _this$props2.offsetY,
+          keepTooltipInside = _this$props2.keepTooltipInside,
+          arrowStyle = _this$props2.arrowStyle,
+          className = _this$props2.className;
+
+      var helper = _this.HelperEl.getBoundingClientRect();
+
+      var trigger = _this.TriggerEl.getBoundingClientRect();
+
+      var content = _this.ContentEl.getBoundingClientRect();
+
+      var boundingBox = _this.getTooltipBoundary();
+
+      var positions = Array.isArray(position) ? position : [position]; // keepTooltipInside would be activated if the  keepTooltipInside exist or the position is Array
+
+      if (keepTooltipInside || Array.isArray(position)) positions = [].concat(_toConsumableArray(positions), POSITION_TYPES);
+      var cords = calculatePosition(trigger, content, positions, arrow, {
+        offsetX: offsetX,
+        offsetY: offsetY
+      }, boundingBox);
+      _this.ContentEl.style.top = "".concat(cords.top - helper.top, "px");
+      _this.ContentEl.style.left = "".concat(cords.left - helper.left, "px");
+
+      if (arrow) {
+        _this.ArrowEl.style.transform = cords.transform;
+        _this.ArrowEl.style['-ms-transform'] = cords.transform;
+        _this.ArrowEl.style['-webkit-transform'] = cords.transform;
+        _this.ArrowEl.style.top = arrowStyle.top || cords.arrowTop;
+        _this.ArrowEl.style.left = arrowStyle.left || cords.arrowLeft;
+
+        _this.ArrowEl.classList.add("popup-arrow");
+
+        if (className !== '') {
+          _this.ArrowEl.classList.add("".concat(className, "-arrow"));
+        }
+      }
+
+      if (
+      /* eslint-disable-next-line no-undef */
+      window.getComputedStyle(_this.TriggerEl, null).getPropertyValue('position') === 'static' ||
+      /* eslint-disable-next-line no-undef */
+      window.getComputedStyle(_this.TriggerEl, null).getPropertyValue('position') === '') _this.TriggerEl.style.position = 'relative';
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "addWarperAction", function () {
+      var _this$props3 = _this.props,
+          contentStyle = _this$props3.contentStyle,
+          className = _this$props3.className,
+          on = _this$props3.on;
+      var modal = _this.state.modal;
+      var popupContentStyle = modal ? styles.popupContent.modal : styles.popupContent.tooltip;
+      var childrenElementProps = {
+        className: "popup-content ".concat(className !== '' ? "".concat(className, "-content") : ''),
+        style: Object.assign({}, popupContentStyle, contentStyle),
+        ref: _this.setContentRef,
+        onClick: function onClick(e) {
+          e.stopPropagation();
+        }
+      };
+
+      if (!modal && on.indexOf('hover') >= 0) {
+        childrenElementProps.onMouseEnter = _this.onMouseEnter;
+        childrenElementProps.onMouseLeave = _this.onMouseLeave;
+      }
+
+      return childrenElementProps;
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "renderTrigger", function () {
+      var triggerProps = {
+        key: 'T',
+        ref: _this.setTriggerRef
+      };
+      var _this$props4 = _this.props,
+          on = _this$props4.on,
+          trigger = _this$props4.trigger;
+      var isOpen = _this.state.isOpen;
+      var onAsArray = Array.isArray(on) ? on : [on];
+
+      for (var i = 0, len = onAsArray.length; i < len; i++) {
+        switch (onAsArray[i]) {
+          case 'click':
+            triggerProps.onClick = _this.togglePopup;
+            break;
+
+          case 'hover':
+            triggerProps.onMouseEnter = _this.onMouseEnter;
+            triggerProps.onMouseLeave = _this.onMouseLeave;
+            break;
+
+          case 'focus':
+            triggerProps.onFocus = _this.onMouseEnter;
+            break;
+
+          default:
+        }
+      }
+
+      if (typeof trigger === 'function') return !!trigger && react__WEBPACK_IMPORTED_MODULE_0___default.a.cloneElement(trigger(isOpen), triggerProps);
+      return !!trigger && react__WEBPACK_IMPORTED_MODULE_0___default.a.cloneElement(trigger, triggerProps);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "renderContent", function () {
+      var _this$props5 = _this.props,
+          arrow = _this$props5.arrow,
+          arrowStyle = _this$props5.arrowStyle,
+          children = _this$props5.children;
+      var _this$state2 = _this.state,
+          modal = _this$state2.modal,
+          isOpen = _this$state2.isOpen;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", _extends({}, _this.addWarperAction(), {
+        key: "C"
+      }), arrow && !modal && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        ref: _this.setArrowRef,
+        style: Object.assign({}, styles.popupArrow, arrowStyle)
+      }), typeof children === 'function' ? children(_this.closePopup, isOpen) : children);
+    });
+
+    _this.setTriggerRef = function (r) {
+      return _this.TriggerEl = r;
+    };
+
+    _this.setContentRef = function (r) {
+      return _this.ContentEl = r;
+    };
+
+    _this.setArrowRef = function (r) {
+      return _this.ArrowEl = r;
+    };
+
+    _this.setHelperRef = function (r) {
+      return _this.HelperEl = r;
+    };
+
+    _this.timeOut = 0;
+    var open = props.open,
+        _modal = props.modal,
+        defaultOpen = props.defaultOpen,
+        _trigger = props.trigger;
+    _this.state = {
+      isOpen: open || defaultOpen,
+      modal: _modal ? true : !_trigger // we create this modal state because the popup can't be a tooltip if the trigger prop doesn't exist
+
+    };
+    return _this;
+  }
+
+  _createClass(Popup, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this$props6 = this.props,
+          closeOnEscape = _this$props6.closeOnEscape,
+          defaultOpen = _this$props6.defaultOpen,
+          repositionOnResize = _this$props6.repositionOnResize;
+      if (defaultOpen) this.setPosition();
+
+      if (closeOnEscape) {
+        /* eslint-disable-next-line no-undef */
+        window.addEventListener('keyup', this.onEscape);
+      }
+
+      if (repositionOnResize) {
+        /* eslint-disable-next-line no-undef */
+        window.addEventListener('resize', this.repositionOnResize);
+      }
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps) {
+      var _this$props7 = this.props,
+          open = _this$props7.open,
+          disabled = _this$props7.disabled;
+      var isOpen = this.state.isOpen;
+
+      if (prevProps.open !== open) {
+        if (open) this.openPopup();else this.closePopup(undefined, true);
+      }
+
+      if (prevProps.disabled !== disabled && disabled && isOpen) {
+        this.closePopup();
+      }
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      // kill any function to execute if the component is unmounted
+      clearTimeout(this.timeOut);
+      var _this$props8 = this.props,
+          closeOnEscape = _this$props8.closeOnEscape,
+          repositionOnResize = _this$props8.repositionOnResize; // remove events listeners
+
+      if (closeOnEscape) {
+        /* eslint-disable-next-line no-undef */
+        window.removeEventListener('keyup', this.onEscape);
+      }
+
+      if (repositionOnResize) {
+        /* eslint-disable-next-line no-undef */
+        window.removeEventListener('resize', this.repositionOnResize);
+      }
+
+      this.resetScroll();
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$props9 = this.props,
+          overlayStyle = _this$props9.overlayStyle,
+          closeOnDocumentClick = _this$props9.closeOnDocumentClick,
+          className = _this$props9.className,
+          on = _this$props9.on,
+          trigger = _this$props9.trigger;
+      var _this$state3 = this.state,
+          modal = _this$state3.modal,
+          isOpen = _this$state3.isOpen;
+      var overlay = isOpen && !(on.indexOf('hover') >= 0);
+      var ovStyle = modal ? styles.overlay.modal : styles.overlay.tooltip;
+      return [this.renderTrigger(), isOpen && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        key: "H",
+        style: {
+          position: 'absolute',
+          top: '0px',
+          left: '0px'
+        },
+        ref: this.setHelperRef
+      }), overlay && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        key: "O",
+        className: "popup-overlay ".concat(className !== '' ? "".concat(className, "-overlay") : ''),
+        style: Object.assign({}, ovStyle, overlayStyle),
+        onClick: closeOnDocumentClick ? this.closePopup : undefined
+      }, modal && this.renderContent()), isOpen && !modal && this.renderContent()];
+    }
+  }]);
+
+  return Popup;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.PureComponent);
+
+_defineProperty(Popup, "defaultProps", {
+  trigger: null,
+  onOpen: function onOpen() {},
+  onClose: function onClose() {},
+  defaultOpen: false,
+  open: false,
+  disabled: false,
+  closeOnDocumentClick: true,
+  repositionOnResize: true,
+  closeOnEscape: true,
+  on: ['click'],
+  contentStyle: {},
+  arrowStyle: {},
+  overlayStyle: {},
+  className: '',
+  position: 'bottom center',
+  modal: false,
+  lockScroll: false,
+  arrow: true,
+  offsetX: 0,
+  offsetY: 0,
+  mouseEnterDelay: 100,
+  mouseLeaveDelay: 100,
+  keepTooltipInside: false
+});
+
+if (true) {
+  var PropTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+  var TRIGGER_TYPES = ['hover', 'click', 'focus'];
+  Popup.propTypes = {
+    arrowStyle: PropTypes.object,
+    contentStyle: PropTypes.object,
+    overlayStyle: PropTypes.object,
+    className: PropTypes.string,
+    modal: PropTypes.bool,
+    arrow: PropTypes.bool,
+    closeOnDocumentClick: PropTypes.bool,
+    repositionOnResize: PropTypes.bool,
+    disabled: PropTypes.bool,
+    closeOnEscape: PropTypes.bool,
+    lockScroll: PropTypes.bool,
+    offsetX: PropTypes.number,
+    offsetY: PropTypes.number,
+    mouseEnterDelay: PropTypes.number,
+    mouseLeaveDelay: PropTypes.number,
+    onOpen: PropTypes.func,
+    onClose: PropTypes.func,
+    open: PropTypes.bool,
+    defaultOpen: PropTypes.bool,
+    trigger: PropTypes.oneOfType([PropTypes.func, PropTypes.element]),
+    // for uncontrolled component we don't need the trigger Element
+    on: PropTypes.oneOfType([PropTypes.oneOf(TRIGGER_TYPES), PropTypes.arrayOf(PropTypes.oneOf(TRIGGER_TYPES))]),
+    children: PropTypes.oneOfType([PropTypes.func, PropTypes.element, PropTypes.string]).isRequired,
+    position: PropTypes.oneOfType([PropTypes.oneOf(POSITION_TYPES), PropTypes.arrayOf(PropTypes.oneOf(POSITION_TYPES))]),
+    keepTooltipInside: PropTypes.oneOfType([PropTypes.bool, PropTypes.string])
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Popup);
+
+
+/***/ }),
+
 /***/ "./node_modules/regenerator-runtime/runtime.js":
 /*!*****************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime.js ***!
@@ -5495,7 +6099,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var WithStaticProps = function WithStaticProps(_ref) {
   var items = _ref.items;
   return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "Home | Next.js + TypeScript Example",
+    title: "Corona Virus Timeline",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -5510,26 +6114,19 @@ var WithStaticProps = function WithStaticProps(_ref) {
       lineNumber: 16,
       columnNumber: 5
     }
-  }), __jsx("h1", {
+  }), __jsx(_components_Timeline__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    items: items,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17,
       columnNumber: 5
     }
-  }, "Hello Next.js \uD83D\uDC4B"), __jsx(_components_Timeline__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    items: items,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 5
-    }
   }), __jsx("p", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 18,
       columnNumber: 5
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -5537,14 +6134,14 @@ var WithStaticProps = function WithStaticProps(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 19,
       columnNumber: 7
     }
   }, __jsx("a", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 20,
       columnNumber: 9
     }
   }, "About"))));
@@ -5555,7 +6152,7 @@ var __N_SSG = true;
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!**********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fapple%2FDocuments%2Fcoronaproject%2Fviewcorona%2Fpages%2Findex.tsx ***!
   \**********************************************************************************************************************************************/
@@ -5578,5 +6175,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

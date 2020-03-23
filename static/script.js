@@ -46,6 +46,19 @@ $(function(){
           easing: 'ease-in-out',
           duration: 800,
         });
+
+        $('.twitter-modal').click(function(e) {
+
+          var checkExist = setInterval(function() {
+            if ($('.modal-content').length) {
+              console.log("Hello world");
+              window.twttr.widgets.load();
+              clearInterval(checkExist);
+            }
+         }, 100); // check every 100ms
+
+
+        });
   
   
   });
