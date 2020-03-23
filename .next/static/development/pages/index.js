@@ -146,32 +146,50 @@ var Layout = function Layout(_ref) {
     }
   }), __jsx("link", {
     rel: "stylesheet",
-    href: "/static/style.css",
+    href: "https://getbootstrap.com/docs/4.0/examples/blog/blog.css",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 21,
       columnNumber: 7
     }
+  }), __jsx("link", {
+    rel: "stylesheet",
+    href: "/static/_flex.scss",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 7
+    }
+  }), __jsx("link", {
+    rel: "stylesheet",
+    href: "/static/style.css",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 7
+    }
   })), children, __jsx("footer", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 44,
       columnNumber: 5
     }
   }, __jsx("hr", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 45,
       columnNumber: 7
     }
   }), __jsx("span", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 46,
       columnNumber: 7
     }
   }, "I'm here to stay (Footer)")), __jsx("script", {
@@ -179,7 +197,7 @@ var Layout = function Layout(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 48,
       columnNumber: 5
     }
   }), __jsx("script", {
@@ -187,7 +205,7 @@ var Layout = function Layout(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 49,
       columnNumber: 5
     }
   }), __jsx("script", {
@@ -195,7 +213,7 @@ var Layout = function Layout(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 50,
       columnNumber: 5
     }
   }), __jsx("script", {
@@ -205,7 +223,7 @@ var Layout = function Layout(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 51,
       columnNumber: 5
     }
   }), __jsx("script", {
@@ -214,7 +232,7 @@ var Layout = function Layout(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 52,
       columnNumber: 5
     }
   }));
@@ -377,21 +395,36 @@ var TimelineItem = function TimelineItem(_ref) {
       lineNumber: 22,
       columnNumber: 11
     }
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam."), __jsx("a", {
-    className: "bnt-more",
-    href: "javascript:void(0)",
+  }, data.text), __jsx("h3", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23,
       columnNumber: 11
     }
-  }, "More")), __jsx("div", {
+  }, "Total Cases: ", __jsx("span", {
+    className: "case_count",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 28
+    }
+  }, data.cases_count)), __jsx("a", {
+    className: "bnt-more",
+    href: "javascript:void(0)",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 11
+    }
+  }, "View Tweets")), __jsx("div", {
     className: "timeline-content js--fadeInRight col-xs-6",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 26,
       columnNumber: 9
     }
   }, __jsx("div", {
@@ -399,7 +432,7 @@ var TimelineItem = function TimelineItem(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 27,
       columnNumber: 11
     }
   }, "1 MAY 2016"), __jsx("ul", {
@@ -409,7 +442,7 @@ var TimelineItem = function TimelineItem(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 28,
       columnNumber: 11
     }
   }, __jsx("li", {
@@ -417,21 +450,21 @@ var TimelineItem = function TimelineItem(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 29,
       columnNumber: 13
     }
   }, __jsx("a", {
     className: "nav-link",
     id: "pills-home-tab",
     "data-toggle": "pill",
-    href: "#pills-home",
+    href: "#pillz",
     role: "tab",
-    "aria-controls": "pills-home",
+    "aria-controls": "pillz",
     "aria-selected": "true",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 30,
       columnNumber: 15
     }
   }, "News")), __jsx("li", {
@@ -439,21 +472,21 @@ var TimelineItem = function TimelineItem(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 32,
       columnNumber: 13
     }
   }, __jsx("a", {
     className: "nav-link active",
     id: "pills-profile-tab",
     "data-toggle": "pill",
-    href: "#pills-profile",
+    href: "#pillz-profile",
     role: "tab",
-    "aria-controls": "pills-profile",
+    "aria-controls": "pillz-profile",
     "aria-selected": "false",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 33,
       columnNumber: 15
     }
   }, "Tweets"))), __jsx("div", {
@@ -462,94 +495,77 @@ var TimelineItem = function TimelineItem(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 36,
       columnNumber: 11
     }
   }, __jsx("div", {
     className: "tab-pane fade",
-    id: "pills-home",
+    id: "pillz",
     role: "tabpanel",
     "aria-labelledby": "pills-home-tab",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36,
-      columnNumber: 13
-    }
-  }, __jsx("div", {
-    className: "card",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 37,
       columnNumber: 13
     }
-  }, __jsx("img", {
-    className: "card-img-top",
-    src: "...",
-    alt: "Card image cap",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38,
-      columnNumber: 15
-    }
-  }), __jsx("div", {
-    className: "card-body",
+  }, __jsx("div", {
+    className: "card flex-md-row mb-4 box-shadow h-md-250",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 39,
-      columnNumber: 15
+      columnNumber: 13
     }
-  }, __jsx("p", {
-    className: "card-text",
+  }, __jsx("div", {
+    className: "card-body d-flex flex-column align-items-start",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 40,
       columnNumber: 17
     }
-  }, "Some quick example text to build on the card title and make up the bulk of the card's content."))), __jsx("div", {
-    className: "card",
+  }, __jsx("strong", {
+    className: "publisher d-inline-block mb-2 text-primary",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
-      columnNumber: 15
+      lineNumber: 41,
+      columnNumber: 19
     }
-  }, __jsx("div", {
-    className: "card-body",
+  }, "World"), __jsx("div", {
+    className: "article-date mb-1 text-muted",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 45,
       columnNumber: 19
     }
-  }, __jsx("h5", {
-    className: "card-title",
+  }, "Nov 12"), __jsx("p", {
+    className: "card-text mb-auto",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 46,
-      columnNumber: 21
+      columnNumber: 19
     }
-  }, "Special title treatment ", __jsx("span", {
+  }, "This is a wider card with supporting text below as a natural lead-in to additional content.")), __jsx("img", {
+    className: "card-img-right flex-auto d-none d-md-block",
+    "data-src": "holder.js/200x250?theme=thumb",
+    alt: "Thumbnail [200x250]",
+    src: "data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_171048c3e81%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_171048c3e81%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1953125%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E",
+    "data-holder-rendered": "true",
+    style: {
+      width: "200px",
+      height: "250px"
+    },
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
-      columnNumber: 72
+      lineNumber: 48,
+      columnNumber: 17
     }
-  }, "@someuser")), __jsx("p", {
-    className: "card-text",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47,
-      columnNumber: 21
-    }
-  }, "With supporting text below as a natural lead-in to additional content."))), __jsx("div", {
+  })), __jsx("div", {
     className: "card",
     __self: _this,
     __source: {
@@ -588,15 +604,54 @@ var TimelineItem = function TimelineItem(_ref) {
       lineNumber: 55,
       columnNumber: 21
     }
+  }, "With supporting text below as a natural lead-in to additional content."))), __jsx("div", {
+    className: "card",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59,
+      columnNumber: 15
+    }
+  }, __jsx("div", {
+    className: "card-body",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61,
+      columnNumber: 19
+    }
+  }, __jsx("h5", {
+    className: "card-title",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 21
+    }
+  }, "Special title treatment ", __jsx("span", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 72
+    }
+  }, "@someuser")), __jsx("p", {
+    className: "card-text",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 21
+    }
   }, "With supporting text below as a natural lead-in to additional content.")))), __jsx("div", {
     className: "tab-pane fade show active",
-    id: "pills-profile",
+    id: "pillz-profile",
     role: "tabpanel",
     "aria-labelledby": "pills-profile-tab",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62,
+      lineNumber: 70,
       columnNumber: 13
     }
   }, __jsx(_components_Twitter__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -604,19 +659,10 @@ var TimelineItem = function TimelineItem(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
+      lineNumber: 71,
       columnNumber: 15
     }
-  }))), __jsx("a", {
-    className: "bnt-more",
-    href: "javascript:void(0)",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 11
-    }
-  }, "More"))));
+  }))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (TimelineItem);

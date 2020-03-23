@@ -18,6 +18,8 @@ const Layout: React.FunctionComponent<Props> = ({
       <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,500,700" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet" />
       <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' />
+      <link rel='stylesheet' href='https://getbootstrap.com/docs/4.0/examples/blog/blog.css' />
+      <link rel='stylesheet' href='/static/_flex.scss' />
       <link rel="stylesheet" href="/static/style.css" />
     </Head>
     {/*

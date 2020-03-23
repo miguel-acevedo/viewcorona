@@ -181,32 +181,50 @@ const Layout = ({
   }
 }), __jsx("link", {
   rel: "stylesheet",
-  href: "/static/style.css",
+  href: "https://getbootstrap.com/docs/4.0/examples/blog/blog.css",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 21,
     columnNumber: 7
   }
+}), __jsx("link", {
+  rel: "stylesheet",
+  href: "/static/_flex.scss",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 22,
+    columnNumber: 7
+  }
+}), __jsx("link", {
+  rel: "stylesheet",
+  href: "/static/style.css",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 23,
+    columnNumber: 7
+  }
 })), children, __jsx("footer", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 42,
+    lineNumber: 44,
     columnNumber: 5
   }
 }, __jsx("hr", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 43,
+    lineNumber: 45,
     columnNumber: 7
   }
 }), __jsx("span", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 44,
+    lineNumber: 46,
     columnNumber: 7
   }
 }, "I'm here to stay (Footer)")), __jsx("script", {
@@ -214,7 +232,7 @@ const Layout = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 46,
+    lineNumber: 48,
     columnNumber: 5
   }
 }), __jsx("script", {
@@ -222,7 +240,7 @@ const Layout = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 47,
+    lineNumber: 49,
     columnNumber: 5
   }
 }), __jsx("script", {
@@ -230,7 +248,7 @@ const Layout = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 48,
+    lineNumber: 50,
     columnNumber: 5
   }
 }), __jsx("script", {
@@ -240,7 +258,7 @@ const Layout = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 49,
+    lineNumber: 51,
     columnNumber: 5
   }
 }), __jsx("script", {
@@ -249,7 +267,7 @@ const Layout = ({
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 50,
+    lineNumber: 52,
     columnNumber: 5
   }
 }));

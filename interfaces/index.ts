@@ -21,6 +21,7 @@ export type Event = {
   id: number,
   title: string,
   date: string,
+  text: string,
   cases_count: number,
   twitter: string[]
 }
