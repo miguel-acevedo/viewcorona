@@ -228,7 +228,7 @@ var Layout = function Layout(_ref) {
     }
   }), __jsx("script", {
     type: "text/javascript",
-    src: "http://platform.twitter.com/widgets.js",
+    src: "https://platform.twitter.com/widgets.js",
     __self: _this,
     __source: {
       fileName: _jsxFileName,

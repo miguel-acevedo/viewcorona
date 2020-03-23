@@ -49,7 +49,7 @@ const Layout: React.FunctionComponent<Props> = ({
     <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
     <script src="/static/script.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossOrigin="anonymous"></script>
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
   </div>
 )
 

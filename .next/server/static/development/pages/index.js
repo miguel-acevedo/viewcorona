@@ -315,7 +315,7 @@ const Layout = ({
   }
 }), __jsx("script", {
   type: "text/javascript",
-  src: "http://platform.twitter.com/widgets.js",
+  src: "https://platform.twitter.com/widgets.js",
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
