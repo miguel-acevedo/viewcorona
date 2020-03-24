@@ -18,12 +18,12 @@ export type array_twitter = {
 }
 
 export type Event = {
-  id: number,
   title: string,
   date: string,
   text: string,
   cases_count: number,
-  twitter: string[]
+  twitter: string[],
+  range: string
 }
 
 export type News = {

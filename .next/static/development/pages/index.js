@@ -279,9 +279,9 @@ var Timeline = function Timeline(_ref) {
       lineNumber: 11,
       columnNumber: 5
     }
-  }, items.map(function (item) {
+  }, items.map(function (item, index) {
     return __jsx("div", {
-      key: item.id,
+      key: index,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
@@ -383,22 +383,7 @@ var TimelineItem = function TimelineItem(_ref) {
       lineNumber: 27,
       columnNumber: 11
     }
-  }, data.text), __jsx("h3", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 11
-    }
-  }, "Total Cases: ", __jsx("span", {
-    className: "case_count",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 28
-    }
-  }, data.cases_count)), __jsx(reactjs_popup__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, data.text), __jsx(reactjs_popup__WEBPACK_IMPORTED_MODULE_1__["default"], {
     trigger: __jsx("a", {
       className: "bnt-more twitter-modal",
       href: "javascript:void(0)",
@@ -450,7 +435,7 @@ var TimelineItem = function TimelineItem(_ref) {
         lineNumber: 36,
         columnNumber: 9
       }
-    }, "Tweets from Dec 31 - Jan 8"), __jsx("button", {
+    }, "Tweets from ", data.range), __jsx("button", {
       type: "button",
       onClick: close,
       className: "close",
@@ -504,7 +489,7 @@ var TimelineItem = function TimelineItem(_ref) {
       lineNumber: 60,
       columnNumber: 11
     }
-  }, "Tweets from Dec 31 - Jan 9"), __jsx("div", {
+  }, "Tweets from ", data.range), __jsx("div", {
     className: "tab-content scroll-box",
     id: "pills-tabContent",
     __self: _this,
@@ -6152,7 +6137,7 @@ var __N_SSG = true;
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!**********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fapple%2FDocuments%2Fcoronaproject%2Fviewcorona%2Fpages%2Findex.tsx ***!
   \**********************************************************************************************************************************************/
@@ -6175,5 +6160,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

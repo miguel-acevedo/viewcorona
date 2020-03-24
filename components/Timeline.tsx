@@ -9,8 +9,8 @@ type Props = {
 const Timeline: React.FunctionComponent<Props> = ({ items }) => (
 <section className="timeline">
     <div className="container">
-        {items.map(item => (
-        <div key={item.id}>
+        {items.map((item, index) => (
+        <div key={index}>
             <TimelineItem data={item} />
         </div>
         ))}

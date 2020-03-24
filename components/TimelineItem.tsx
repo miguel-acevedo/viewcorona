@@ -25,7 +25,7 @@ const TimelineItem: React.FunctionComponent<Props> = ({ data }) => (
           <h2 className="event-title">{data.title}</h2>
           <div className="date">{data.date}</div>
           <p>{data.text}</p>
-          <h3>Total Cases: <span className="case_count">{data.cases_count}</span></h3>
+          {/* <h3>Total Cases: <span className="case_count">{data.cases_count.toLocaleString()}</span></h3> */}
 
 
   <Popup trigger={<a className="bnt-more twitter-modal" href="javascript:void(0)">View Tweets</a>} modal>
@@ -33,7 +33,7 @@ const TimelineItem: React.FunctionComponent<Props> = ({ data }) => (
     <div className="modal-dialog" role="document">
     <div className="modal-content">
       <div className="modal-header">
-        <h5 className="modal-title">Tweets from Dec 31 - Jan 8</h5>
+        <h5 className="modal-title">Tweets from {data.range}</h5>
         <button type="button" onClick={close} className="close" data-dismiss="modal" aria-label="Close">
           <span className="exit-modal" aria-hidden="true">&times;</span>
         </button>
@@ -57,7 +57,7 @@ const TimelineItem: React.FunctionComponent<Props> = ({ data }) => (
 
         </div>
         <div className="twitter-card timeline-content js--fadeInRight col-xs-6">
-          <div className="tweet-date">Tweets from Dec 31 - Jan 9</div>
+          <div className="tweet-date">Tweets from {data.range}</div>
           <div className="tab-content scroll-box" id="pills-tabContent">
             <Twitter data={data.twitter}/>
           </div>
