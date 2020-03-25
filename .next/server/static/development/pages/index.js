@@ -139,7 +139,7 @@ const Header = ({
     lineNumber: 9,
     columnNumber: 5
   }
-}, "Event Timeline")));
+}, "Timeline of coronavirus events")));
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
 
